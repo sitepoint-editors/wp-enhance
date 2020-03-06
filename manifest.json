@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "WP Enhance",
+  "description": "A Chrome extension to enhance WordPress' functionality",
+  "version": "0.0.1",
+  "content_scripts": [
+    {
+      "matches": [ "http://localhost/wp/wp-admin/post-new.php" ],
+      "js": [
+        "lib/jquery.min.js",
+        "lib/showdown.min.js",
+        "lib/jquery.datetimepicker.full.min.js",
+        "scripts/main.js"
+      ],
+      "css": [ "css/jquery.datetimepicker.min.css" ]
+    }
+  ]
+}
